@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Simple Map</title>
-    <meta name="viewport" content="initial-scale=1.0">
-    <meta charset="utf-8">
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.31.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.31.0/mapbox-gl.css' rel='stylesheet' />
     <style>
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      #map {
-        height: 100%;
-      }
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
     </style>
-  </head>
-  <body>
-    <div id="map"></div>
-    <script>
-      
-
-      var map;
-      
-
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 19.128705, lng: 72.885356},
-          zoom: 11
-        });
-      }
-
-      historicalOverlay = new google.maps.GroundOverlay(
-            'icons-01.jpg', imageBounds);
-        historicalOverlay.setMap(map);
-        
+</head>
+<body>
 
 
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkjUAoeKjolkJkmpgGROWwpFd2QWmkWt0&callback=initMap"
-    async defer></script>
-  </body>
+
+<div id='map'></div>
+
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiY2hhYW5kbmkiLCJhIjoiY2l0dTFlMm0yMDAwbzJuazljb2kxeTVzdCJ9.6yQoWg7Jj-d_Kge39fMimA';
+
+var bounds = [
+    [72.637346, 18.732337 ], // Southwest coordinates
+    [ 73.146713, 19.387506]  // Northeast coordinates
+];
+
+
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/chaandni/ciy9wt01k005k2sqeuh5qskfk',
+    
+    center: [72.896879, 19.011614],
+    zoom: 11.31,
+    maxBounds: bounds
+});
+
+map.addControl(new mapboxgl.NavigationControl());
+
+</script>
+
+</body>
 </html>
