@@ -52,9 +52,9 @@ header {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  margin-bottom: 4em;
+  margin-bottom: 3em;
   text-align: center;
-  height: 340px;
+  height: 600px;
 
 }
 
@@ -66,22 +66,22 @@ header h1 {
   opacity: 1;
   text-shadow: 0 3px 0 rgba(226, 226, 226, 0.5);
   position: relative;
-  top: 170px;
+  top: 150px;
   font-weight: 700;
 }
 
 header p {
   color: #303030;
-  font-size: 1.1em;
-  padding-bottom: 1.3em;
+  font-size: 1em;
+  padding-bottom: 1em;
   padding-top: .5em;
   opacity: .9;
   position: relative;
-  top: 200px;
+  top: 300px;
 }
 
 section h1 {
-  font-size: 1.8em;
+  font-size: 1.1em;
   line-height: 1em;
   margin-bottom: .6em;
 }
@@ -107,21 +107,21 @@ footer hr {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  width: 400px;
+  width: 200px;
 }
 
 @media screen and (min-width: 50em) {
   header {
-    height: 300px;
+    height: 450px;
   }
 
   header h1 {
     font-size: 3.2em;
-    top: 300px;
+    top: 250px;
   }
 
   header p {
-    top: 300px;
+    top: 280px;
     font-size: 1.5em;
   }
 }
@@ -130,6 +130,7 @@ footer hr {
 /* ------------------- Grid -------------------*/
 
 .container {
+
   max-width: 45em;
   width:92%;
   margin-right: auto;
