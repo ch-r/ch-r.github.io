@@ -1,0 +1,124 @@
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154997136-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-154997136-1');
+</script>
+
+
+<meta charset="UTF-8">
+<title>Chandni's Interweb Home </title>
+  <link rel="stylesheet" type="text/css" href="res/style.css">
+<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+  <link rel="icon" href="res/fav.png" type="image/gif" sizes="16x16">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+
+<body>
+
+  <!-- menu bar standard -->
+  <div class ="top">
+      <a href="index.html"> <img  src="res/About/logo2.png"></a>
+      <h3 id = "home-button" > <a href="index.html" class="logo"> <b>Chandni Rajendran </b></a> </h3>
+      <h3 id = "port-button"> <a href="portfolio.html"> portfolio </a></h3>
+      <h3 id = "resume-button"> <a href="resume.html"> resume </a></h3>
+      <h3 id = "about-button"> <a href="about.html">about </a> </h3>
+  </div>
+
+
+  <div class="content">
+      <h3> Enhancing Indoor Navigation Experiences </h3>
+      <p>Academic Project Intent<br>
+      This is a proposal I wrote for a thesis project, but found something more compelling to work on.
+    </p> <p>
+      Alternate approach to indoor way finding with reduced dependency on precise positioning and point-to-point “routes”
+      </p>
+      <h4>Indoor Positioning System (IPS)</h4>
+      <p> Legibility has been a high priority in traditional architecture, with strong emphasis on symmetry and order. As buildings became larger and their functions more complex, like in airports, legibility slipped below operational requirements. Shopping malls are deliberately designed with minimised legibility to make users spend more time in the mall. Other buildings are just so large that that it is tedious to find spaces inside, such as a multi specialty hospital, a student hostel block of 300+rooms, or large departmental stores with <a href= "http://www.slate.com/blogs/business_insider/2015/10/26/walmart_supercenters_reduce_number_of_products_lower_shelf_height_to_increase.html" target="_blank"> over a million products.</a> Signs and notices fail to scale effectively, creating the need for a live positioning tool in addition to a map indexing the building’s “contents.” </p><p>
+      Positioning technology such as BLE and Wifi triangulation is barely a few years old, and there are already a number of service providers who can map buildings and make them available on apps for visitors. Many leverage the technology and provide detailed analytics of people, traffic, operations, etc. Apple’s <a href= "http://www.ibeacon.com/what-is-ibeacon-a-guide-to-beacons/" target="_blank">iBeacon</a> and Google’s <a href= "https://developers.google.com/beacons/" target="_blank">Eddystone</a> (open source) are the two main protocols on which many developers are building useful indoor navigation tools. Manufacturers such as <a href= "http://estimote.com/" target="_blank">Estimote</a>, <a href="https://www.blesh.com/" target="_blank"> Blesh</a>, make beacons that are easy to set up and operate on this platform.
+      </p><p>
+      The state of indoor navigation today (June 2016) focuses primarily on providing step by step navigational instructions to the user trying to get from point A to B. It appears to carry baggage from the outdoor navigation system that has had several years to evolve to suit the needs of a driver who is unfamiliar with the city. Many founders even unapologetically describe their products as “GPS for indoors” and most concept videos depict users holding up their phone at all times.
+      </p>
+      <h4>Shedding the Baggage- Key Differences</h4>
+      <p>There are a few important differences to note between indoor and outdoor navigation that may seem obvious but make a considerable difference to the design approach.</p>
+      <li> Indoor users are usually walking, alone or with company, and may be carrying things in their hands. Having to look into the phone constantly may be more than an inconvenience and a real safety concern. If an indoor navigation application needs to provide a safety message to users every time the app is launched, it is not the best solution to the problem. Switching to voice is an option, but with some critical design thought, the upgrade could more than a literal translation.</li>
+      <img class="smaller-img" src="res/U08_Wayfinding/ch_1.jpeg">
+
+      <li> Walking pace is much slower than driving, and a <b>user can take in a lot more information from the environment than a driver can at 60 kmph.</b> Precise location information may be essential while driving because overshooting can mean long detours to get back on track. Indoors, physical references may be more useful and effective, while locational precision can supplement the process.</li>
+      <p></p>
+      <img class="smaller-img" src="res/U08_Wayfinding/ch_2.png">
+      <h6> A user is almost expected to overshoot and re-orient. Unless, of course, their eyes are glued to their phone for every next step. Image from <a href="https://www.youtube.com/watch?v=7xUERfmFHtc" target="_blank"> Insoft’s airport navigation system concept video.</a></h6>
+      <li> On the road, it might be difficult to memorise a 10 km long route involving 30 turns to take and 100 others to skip. Indoor environments are usually rich in visual cues and markers. Architecturally, <b>spaces have a lot more distinctive character than roads do.</b> A corridor cannot be mistaken for an atrium, a staircase for a lift well, or a parking lot for a retail store. Navigation aids can tap into this aspect and provide contextual information.</li>
+      <li> <b>Levels.</b> Buildings are in multiple levels and one can get from level A to level B only at specific locations. Simply being familiar with the circulation skeleton could make a user much more comfortable moving around a building.</li>
+      <p>The overarching principle of most navigation systems seems to be detail oriented and precise to every step, delivering a blinkered navigational experience. Precise location will benefit the user in the last few meters of trying to locate something. It may be called upon to reorient a user if he gets lost along the way, but it is not very good design sense to delegate all navigational responsibility to it.</p>
+      <h4> Navigating buildings like you know them </h4>
+      <p>There are three preliminary angles to enhancing way-finding that would be interesting to explore.</p>
+      <li> <b>Providing a schematic overview</b> of the building from the point of view of the user. A user who takes a domestic flight needs to know different aspects of the airport from someone who’s flying international. Information about the operational flow can add to clarity.</li>
+      <li> <b>Referring to the physical.</b> When it comes down to routes, the nature of guidance can rise above robotic instructions (graphic or audio) and zoom out a little, building on people’s ability to understand 3D spaces, with more references to the physical world.</li>
+      <li> <b>Connecting the virtual and the physical.</b> Over and above the tool providing references to existing cues, what systems of markers can we provide in the physical environment that can work hand in hand with the navigational aid?</li>
+      <p> Additionally, knowledge of fire exits and other safety precautions makes a big difference in times of crisis in a way that a live application cannot.</p>
+
+      <img class="smaller-img" src="res/U08_Wayfinding/ch_3.jpeg">
+      <h6> A schematic overview such as this could be seamlessly linked to detailed views in an interactive map. <a href="http://www.nhm.ac.uk/resources-rx/files/nhm-map-2014-107008.pdf" target="_blank">Source.</a></h6>
+      <p>From this starting point, the following areas need to be probed to guide the design of such navigational aids</p>
+      <li>     how modern buildings are perceived. The questions in a new visitor’s mind vs the clear conceptual models formed by regular users.
+      </li><li>
+    cognitive mechanics of navigating a building
+    </li><li>
+    cues and references that work best
+    </li><li>
+    users’ average spatial intelligence, sense of direction, spatial memory, cognitive limits. To know when something becomes too complex to understand or too featureless to remember.</li>
+
+    <h4> Process Outline</h4>
+    <p>
+      The focus of the project will be to explore all ways to minimise the need to frequently check with the tool for precise positioning.</p>
+
+      <li>
+        Assess cognitive aspects of way-finding from literature and contextual inquiry. Informative texts are available on <a href="http://eab.sagepub.com/content/48/3/482.full.pdf+html" target="_blank"> way finding behaviours</a>, <a href="http://eab.sagepub.com/content/23/3/259.full.pdf+html" target="_blank">conceptual models</a>, and <a href="http://eab.sagepub.com/content/47/9/1024.full.pdf+html" target="_blank">navigating virtual environments</a>.
+      </li><li>
+        Test theories with expert reviews and empirical studies.
+      </li><li>
+        Provide design guidelines for communicating building information, suggest standard set of overlays such as functional/operational, circulation, fire safety, etc.
+      </li><li>
+        Design content for a few examples of varying complexity and functions. <i>About five buildings?</i>
+      </li><li>
+        If crowdsourcing is the way forward, design the right questions to ask the “crowd.” Quite challenging. Not sure if this can be done within the Project-II timeframe of 3.5 months.
+      </li>
+
+      <h4> Summary </h4>
+      <p>
+        To summarise, the thesis is that indoor navigation is a complex problem and the experience can be made more natural and intuitive with the right information. When the tool fails to provide that information, users will need the crutches of precise positioning and end up with a suboptimal experience. The objective of the project will be to design indoor navigation aids that may take a few seconds to read/watch, and are clear and memorable enough that users won’t have to keep referring to them except to look up something specific.</p>
+
+
+
+  </div>
+
+      <!-- footer -->
+      <div class="footer">
+        <div class = "footer-1">
+          <p> <a href="portfolio.html"> portfolio </a> <br>
+          <a href="talks.html"> talks</a><br>
+          <a href="resume.html"> resume</a><br>
+          <a href="about.html"> about</a> </p>
+
+        </div>
+        <div class = "footer-2">
+          <p> <a href="portfolio.html"> LinkedIn </a> <br>
+            <a> chandni@tuta.io </a>
+          </p>
+        </div>
+        <div class = "footer-3">
+          <p> Website developed from scratch, with joy.
+          <br>  &copy; Chandni Rajendran</p>
+        </div>
+      </div>
+
+</body>
+</html>
