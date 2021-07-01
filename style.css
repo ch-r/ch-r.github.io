@@ -378,10 +378,7 @@ hr.solid{
   color: #fff;
 }
 
-/* hr{
-  border: 0.2px solid #cecece;
-  /* border-radius: 5px; */
-} */
+
 
 /* home page styling */
 
@@ -1017,8 +1014,8 @@ ol{
 
   /* typography */
 
-      h1{font-size: 36px;}
-      h2{font-size: 28px;}
+      h1{font-size: 18px;}
+      h2{font-size: 18px;}
       h3{font-size: 16px;}
       h4{font-size: 16px; font-weight: 800;}
       h5{font-size: 12px; font-weight: 400;}
@@ -1026,7 +1023,7 @@ ol{
       p,li{font-size: 14px;}
 
       .info h4 {
-        font-size: 18px;
+        font-size: 14px;
       }
       .info h5{
         font-size: 14px;
@@ -1108,7 +1105,9 @@ ol{
         text-align: left;
         color: #4a4a4a;
       }
-
+      .header{
+        padding: 20% 0 15% 0;
+      }
 
       .top-home a{
         margin: 2%;
@@ -1119,36 +1118,10 @@ ol{
         float: right;
       }
 
+      .profile h1{
+        font-size: 18px;
+      }
 
-/* menu styling */
-      .categories{
-        display: none;
-      }
-      .cat-1 {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-column-gap: 3%;
-        grid-row-gap: 0;
-        padding: 2% 20% 2% 20%;
-      }
-      .cat-project{
-        padding: 2%;
-      }
-      .cat-5{
-        padding: 0;
-        margin 2%;
-      }
-      .cat-5{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-column-gap: 3%;
-        padding: 5% 0 30% 0;
-      }
-      .resumeHeader a{
-        font-color: #3c3c3c;
-
-      }
 
 
       /* grids */
@@ -1203,50 +1176,7 @@ ol{
           padding: 5% 5% 5% 5%;
       }
 
-      .banner {
-          padding: 50px 5% 70px 5%;
-      }
 
-      .banner h2{
-          text-align: left;
-      }
-
-      .talks-page {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-column-gap: 3%;
-        grid-row-gap: 0;
-        padding: 10% 15% 10% 15%;
-      }
-
-      .cat-talks {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-column-gap: 3%;
-        grid-row: minmax(30%, auto);
-        padding: 5% 15% 5% 15%;
-      }
-
-      .work-ex, .internships, .education, .awards, .speaking, .published, .fellowships{
-        display: block;
-      }
-
-      .resume-left-title{
-        text-align: left;
-        padding-top: 10%;
-        border-bottom: 1px solid #868686;
-      }
-      .testimonials{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-      }
-      .resume-detail-1, .resume-detail-2, .resume-detail-3, .resume-detail-4, .resume-detail-5 {
-        padding: 5px 25px 5px 25px;
-        margin: 2% 5% 2% 5%;
-        border: 1px solid #dcdcdc;
-        border-radius: 15px;
-      }
       .videos{
         margin: 0 auto 0 auto;
         width:100%;
@@ -1259,9 +1189,6 @@ ol{
         width:100%;
       }
 
-      .home-1, .home-2, .home-3, .home-4{
-        align-items: center;
-      }
       .sample .info-tags{
         display: none;
       }
@@ -1271,11 +1198,9 @@ ol{
       .sample button{
         display: none;
       }
-      .cat-title{
-        padding: 20% 15% 10% 15%;
-      }
+
       .button a{
-        font-size: 16px;
+        font-size: 12px;
       }
       .more{
         display: grid;
@@ -1290,14 +1215,27 @@ ol{
           grid-column-gap: 5%;
           padding: 5% 5% 15% 5%;
       }
+
+      .home-button{
+        font-size: 10px;
+        }
+
       .home-info h4 {
           font-family: 'Montserrat', sans-serif;
-          font-size: 18px;
+          font-size: 14px;
           font-weight: 600;
       }
 
-      .footer p{
-        /* padding: 6% 10% 8% 10%; */
-        margin: 0;
+      .notion{
+        width: 80%;
       }
+
+
+      .footer {
+        display: grid;
+        grid-template-columns: 2fr 0fr 1fr;
+        margin: 0;
+        padding: 10% 5% 10% 5%;
+      }
+
 }
