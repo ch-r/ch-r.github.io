@@ -131,7 +131,8 @@ a:active {
  cursor: pointer; /* Add a mouse pointer on hover */
  padding: 5px 35px 5px 35px; /* Some padding */
  border-radius: 10px; /* Rounded corners */
- font-size: 18px; /* Increase font size */
+ font-size: 12px; /* Increase font size */
+ font-weight:200;
  box-shadow: 5px 5px 5px -5px rgba(45, 45, 45, 0.5);
  /* border-style: solid;
  border-color: #fcfcfc;
@@ -150,22 +151,35 @@ a:active {
 
 .header{
   display: grid;
-  grid-template-columns:  repeat(3, 1fr);
+  grid-template-columns:  1fr 2fr;
   padding: 8% 0 8% 0;
-  grid-template-areas:
-    "a b b ";
+  /* grid-template-areas:
+    "a b"; */
   align-items: center;
-
 }
 
-.profile{
+.header{
+  position: relative;
+  width: 100%;
+  /* background: #ffae30; */
+  z-index: -1;
+}
+
+.header img{
+  border-radius: 15px;
+  width: 200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+/* .profile{
   grid-area: a;
-
 }
 
-.main-text{
+.header-image{
   grid-area: b;
-}
+} */
 
 .categories{
   grid-area: p;
@@ -173,12 +187,24 @@ a:active {
 
 .profile h1{
   font-family: 'Montserrat', sans-serif;
-  font-size: 48px;
+  font-size: 24px;
   font-weight: 900;
-  color: #fff;
-  text-align: right;
-  padding: 0 10% 0 10%;
+  /* color: #fff; */
+  padding: 0 10% 0 15%;
 }
+
+.profile h2{
+  font-size: 18px;
+  text-align: left;
+  padding: 0 10% 0 15%;
+}
+
+.profile h4{
+  text-align: left;
+  padding: 0 10% 0 15%;
+}
+
+
 
 .main-text{
   max-width: 60%;
@@ -194,25 +220,9 @@ a:active {
   width: 64px;
   height: 64px;
 }
-.top-home img{
-  width: 64px;
-  height: 64px;
-}
 
-.header{
-  position: relative;
-  width: 100%;
-  background: #ffae30;
-  z-index: -1;
-}
 
-.header img{
-  border-radius: 150px;
-  width: 200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-}
+
 
 .categories{
   display: grid;
@@ -238,9 +248,9 @@ a:active {
 
 
 .notion{
-  margin: 2% 15% 2% 15%;
+  margin: 2% auto 2% auto;
   padding: 2%;
-  width: 50%;
+  width: 30%;
 }
 
 
@@ -260,11 +270,19 @@ a:active {
 }
 
 hr.solid{
-  border-top: 0.5px solid #bbb;
+  border-bottom: none;
+  border-top: 0.6px #cecece;
+  border-top-style: solid;
   display: block;
   margin: 0 15% 0 15%;
+
 }
 
+
+.about-block{
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+}
 .sticky {
   position: fixed;
   top: 0;
@@ -360,40 +378,9 @@ hr.solid{
   color: #fff;
 }
 
-hr{
-  border: 0.5px solid #bbb;
-  border-radius: 5px;
-}
-
-
-/* portfolio colors */
-/*
-.PD{
-  background-image: linear-gradient(#abd882, #caf3b9);
-}
-.GD{
-  background-image: linear-gradient(#caf3b9, #a0efc0);
-}
-.RES{
-  background-image: linear-gradient(#a0efc0, #a0bcef);
-}
-.ID{
-    background-image: linear-gradient(#a0bcef, #b2a0ef);
-}
-.InD{
-      background-image: linear-gradient( #b2a0ef, #ecbcf5);
-}
-.GDI{
-    background-image: linear-gradient(#ecbcf5, #f5bcdf);
-}
-.Ex{
-  background-image: linear-gradient(#f5bcdf, #f5bcda);
-}
-.RD{
-  background-image: linear-gradient(#f5bcda, #f5bcc5);
-}
-.UD{
-  background-image: linear-gradient( #f5bcc5, #dacdcf);
+/* hr{
+  border: 0.2px solid #cecece;
+  /* border-radius: 5px; */
 } */
 
 /* home page styling */
@@ -449,30 +436,42 @@ hr{
 }
 
 .portfolio-section{
-  margin: 5% 0 5% 0;
+  margin: 2% 0 2% 0;
 }
 
 .sample{
-  padding: 2% 15% 2% 15%;
+  padding: 5% 10%;
 
 }
+.sample-odd{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.sample-even{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
 .sample img{
   width:100%;
 }
 .home-info{
-  margin: 2% 10% 5% 2%;
+  margin: 2% 10% 5% 10%;
 }
 .home-info.ux{
     margin: 2% 2% 2% 2%;
 }
+
 .home-info h4{
   font-family: 'Montserrat', sans-serif;
   font-size: 22px;
-  font-weight: 900;
+  font-weight: 800;
 }
+
 .home-info h5{
 
 }
+
 .button a{
   color: #000;
   text-align: center;
@@ -533,7 +532,7 @@ hr{
 .info-title{
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .title-strong{
@@ -627,12 +626,13 @@ ol{
   display: grid;
   grid-template-columns: minmax(64px, 1fr)  minmax(min-content, 3fr) ;
   background-color: #ffae30;
-  align-items: center;
+  align-items:flex-start;
   color: #404040;
   position: fixed;
   width: 100%;
+  height: 40px;
   top: 0;
-  overflow: hidden;
+  overflow: visible;
   /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
 }
 
@@ -641,7 +641,13 @@ ol{
   display: block;
   text-align: center;
   color: #3c3c3c;
-  margin: 0 2% 0 2%;
+  margin: 1% 2% 0 2%;
+}
+
+
+.top-home img{
+  width: 64px;
+  height: 64px;
 }
 
 .top h3{
